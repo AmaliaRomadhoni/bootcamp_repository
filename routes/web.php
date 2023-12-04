@@ -12,7 +12,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('user/products', 'ProductsController@index');
+//Route::get('user/products', 'ProductsController@index');
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
