@@ -6,10 +6,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index()
-    {
-        return "ini adalah halaman index";
-    }
+   
 
     public function create()
     {
