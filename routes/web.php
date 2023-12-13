@@ -2,24 +2,45 @@
 
 <?php
 
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\UserController;
+use App\Models\Repository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view("welcome");
-});
+
+Route::resource('/repository', \App\Http\Controllers\RepositoryController::class);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Route::get('user/products', 'ProductsController@index');
-Auth::routes();
+//Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::get('/user', [UserController::class, 'index'])->name('user');
+ //Route::get('/repository/index', [UserController::class, 'index'])->name('user');
 
-// Route::get('/user/create', [UserController::class, 'create'])->name('user');
+//Route::get('/user/create', [UserController::class, 'create'])->name('user');
 
 //Route::get('/user/edit', [UserController::class, 'edit']);
 
@@ -27,6 +48,5 @@ Auth::routes();
 
 //Route::get('/user/show', [UserController::class, 'show']);
 
-//cara kedua
 //Route::resource('user', UserController::class);
 //Route::get('/user/caridata', [UserController::class, 'cariData'])->name('user.caridata');

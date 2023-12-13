@@ -45,6 +45,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         @csrf
                         <button type="submit" class="btn btn-default text-capitalize">logout</button>
                     </form>
+                    
                 </li>
             </ul>
         </nav>
